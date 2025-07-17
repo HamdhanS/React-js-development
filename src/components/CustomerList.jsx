@@ -46,6 +46,7 @@ const [isEdit, setIsEdit] = useState(false);
    const navigate = useNavigate();
 
    const handleOpen = (row = null, edit = false) => {
+    console.log("row",row)
   if (edit && row) {
     // Mapping to match your formData keys
     const transformedRow = {
@@ -178,7 +179,7 @@ const [isEdit, setIsEdit] = useState(false);
 
                <AddCustomer
                 formData={formData}
-               setData={setFormData}
+                setData={setFormData}
                  isEdit={isEdit}
 
                 />
@@ -187,7 +188,7 @@ const [isEdit, setIsEdit] = useState(false);
           </DialogContent>
 
           <DialogActions>
-            <Button onclick={() => setOpen(false)}>Update</Button>
+            <Button onClick={() => setOpen(false)}>Update</Button>
              <Button onClick={() => setOpen(false)}>Cancel</Button>
            </DialogActions>
          </Dialog>

@@ -20,7 +20,6 @@ const AddCustomer = ({ formData, setData, isEdit }) => {
     const handleCancel = () => {
         navigate('/');
     };
-
     return (
         <Container maxWidth={false} sx={{ width: '100%', px: 4 }}>
             <Box sx={{ p: 4, boxShadow: 3, borderRadius: 3, mt: 1 }}>
@@ -31,32 +30,24 @@ const AddCustomer = ({ formData, setData, isEdit }) => {
                             onChange={(e) => setData(prev => ({ ...prev, name: e.target.value }))}
                         />
                     </Grid>
-                     <Grid item xs={12} sm={6} size={12}>
-                        <TextField label="Age" name="age" fullWidth required  
-                        value={formData.age}
+                    <Grid item xs={12} sm={6} size={12}>
+                        <TextField label="Age" name="age" fullWidth required
+                            value={formData.age}
                             onChange={(e) => setData(prev => ({ ...prev, age: e.target.value }))}
                         />
-                    </Grid> 
+                    </Grid>
                     <Grid item xs={12} sm={6} size={12}>
-                        <TextField label="Phone Number" name="PhoneNumber" type="tel" fullWidth 
-                        value={formData.PhoneNumber}
+                        <TextField label="Phone Number" name="PhoneNumber" type="tel" fullWidth
+                            value={formData.PhoneNumber}
                             onChange={(e) => setData(prev => ({ ...prev, PhoneNumber: e.target.value }))}
                         />
                     </Grid>
-
-
                     <Grid item xs={12} sm={6} size={12}>
-                        <TextField label="Email" name="Email" type="email" fullWidth required 
-                         value={formData.Email}
+                        <TextField label="Email" name="Email" type="email" fullWidth required
+                            value={formData.Email}
                             onChange={(e) => setData(prev => ({ ...prev, Email: e.target.value }))}
-                        
-                        
-                        
                         />
-
-
                     </Grid>
-                    
                     <Grid item xs={12} sm={6} size={12}>
                         <TextField
                             label="Address"
@@ -64,15 +55,11 @@ const AddCustomer = ({ formData, setData, isEdit }) => {
                             fullWidth
                             multiline
                             rows={1}
-                            required 
-
-                             value={formData.Address}
+                            required
+                            value={formData.Address}
                             onChange={(e) => setData(prev => ({ ...prev, Address: e.target.value }))}
-                        
                         />
                     </Grid>
-                    
-
                     <Grid item xs={12} sm={6} size={12}>
                         <TextField
                             label="Join Date"
@@ -81,10 +68,8 @@ const AddCustomer = ({ formData, setData, isEdit }) => {
                             InputLabelProps={{ shrink: true }}
                             fullWidth
                             required
-
-                             value={formData.JoinedDate}
+                            value={formData.JoinedDate}
                             onChange={(e) => setData(prev => ({ ...prev, JoinedDate: e.target.value }))}
-                        
                         />
                     </Grid>
                     <Grid item xs={12} sm={6}></Grid>

@@ -12,7 +12,9 @@ const Popup =() => {
     const [ open, setOpen] = useState(false);
     return (
     <div>
-        <Button  onClick={() => setOpen(true)}>open Dialog</Button>
+        <Button variant='contained' 
+        color='primary' 
+        onClick={() => setOpen(true)}>open Dialog</Button>
         <Dialog  open={open} onClose={() => setOpen(false)}>
             <DialogTitle>This Is My Dialog Box </DialogTitle>
                 <DialogContent>
@@ -22,8 +24,11 @@ const Popup =() => {
                 </DialogContent>
 
                 <DialogActions>
-                    <Button onclick={() => setOpen(false)}>Upadet</Button>
-                    <Button onClick={() => setOpen(false)}>Cancel</Button>
+                    <Button variant='contained'
+                    color='success'
+                     onclick={() => setOpen(false )}>Upadet</Button>
+                    <Button variant='ountlined'
+                    color='error' onClick={() => setOpen(false)}>Cancel</Button>
 
                 </DialogActions>
         </Dialog>

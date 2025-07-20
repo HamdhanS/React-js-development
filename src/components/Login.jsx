@@ -29,9 +29,9 @@ function SignIn() {
   return (
       <Container sx={{ width: '50%', px: '4', alignItems: "center", paddingTop: "120px", height: '600px', }}>
         <Box sx={{ p: 4, boxShadow: 3, borderRadius: 3, mt: 1,height:"400px" }}>
-          <Typography style={{ color: "block", marginRight: "220px",marginTop:"40px", text:"bold" }} variant="h5" gutterBottom>
+          <Typography style={{ color: "Green", marginLeft: "210px",marginTop:"40px", text:"bold" }} variant="h5" gutterBottom>
             Customer Login
-          </Typography>
+          </Typography> 
           <form onSubmit={handleSubmit}>
             <Grid container spacing={4} >
               <Grid item xs={12} sm={6} size={8} style={{ marginLeft: "90px", marginTop:"30px"}}>
@@ -40,8 +40,8 @@ function SignIn() {
               <Grid item xs={12} sm={6} size={8} style={{ marginLeft: "90px" }}>
                 <TextField label="Password" name="Password" fullWidth required />
               </Grid>
-              <Grid item xs={12} sm={6} size={8} style={{ marginLeft: "180px",}}>
-                <Button type="submit" style={{ background: "green", color: "white", alignItems: "center", marginLeft: "200px", marginTop:"30px", width: "200px" ,height:"50px"}} >Login</Button>
+              <Grid item xs={12} sm={6} size={8} style={{ marginLeft: "90px",}}>
+                <Button type="submit" style={{ background: "green", color: "white", alignItems: "Center", marginRight: " 40px", marginTop:"10px", width: "430px" ,height:"50px"}} >Login</Button>
               </Grid>
             </Grid>
           </form>
